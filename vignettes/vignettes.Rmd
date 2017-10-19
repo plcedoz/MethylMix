@@ -134,6 +134,9 @@ saveRDS(toSave, file = paste0(targetDirectory, "data_", cancerSite, ".rds"))
 stopCluster(cl)
 ```
 
+For user supplied data not from TCGA, the user can provide DNA methylation (beta-values) and gene expression data in the form of a data.matrix object in R. If the data contains batches, the user must provide numeric batch data within the matrices.
+
+
 ## 4. Data input for MethylMix
 
 To run MethylMix three data sets of a particular disease are required. The first one is 
